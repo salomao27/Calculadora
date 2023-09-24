@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="bg-dark" id="main">
+        <h1>Calculadora</h1>
+        <div class="calculadora">
+            <div class="visor"><p id="resultado"></p></div>
+            <div class="op">
+                <button type="button" class="btn btn-warning" onclick="insert('+')">+</button>
+                <button type="button" class="btn btn-warning" onclick="insert('-')">-</button>
+                <button type="button" class="btn btn-warning" onclick="insert('X')">X</button>
+                <button type="button" class="btn btn-warning" onclick="insert('/')">/</button>
+                
+                
+            </div>
+            <div class="botoes">
+                <div class="fila1">
+                    <button type="button" class="btn btn-secondary" onclick="insert('1')">1</button>
+                    <button type="button" class="btn btn-secondary" onclick="insert('2')">2</button>
+                    <button type="button" class="btn btn-secondary" onclick="insert('3')">3</button>
+                    <button type="button" class="btn btn-danger" onclick="clean()">C</button>
+                </div>
+               
+                    <div class="fila2">
+                        <button type="button" class="btn btn-secondary" onclick="insert('4')">4</button>
+                        <button type="button" class="btn btn-secondary" onclick="insert('5')">5</button>
+                        <button type="button" class="btn btn-secondary" onclick="insert('6')">6</button>
+                        <button type="button" class="btn btn-primary" onclick="calcular()" id="igual">=</button>
+                    </div>
+                    <div class="fila3">
+                        <button type="button" class="btn btn-secondary" onclick="insert('7')">7</button>
+                        <button type="button" class="btn btn-secondary" onclick="insert('8')">8</button>
+                        <button type="button" class="btn btn-secondary" onclick="insert('9')">9</button>
+                        
+                    </div>
+            </div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://github.com/salomao27" id="footer">Desenvolvido por João Marcos</a>
+    </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

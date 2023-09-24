@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    color:white;
+    border: black solid 6px;
+    background-color: black;
+}
+.visor{
+    background-color: #054f77;
+    border-radius: 3px;
+    height: 90px;
+    margin-bottom: 9px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+
+}
+button{
+    width: 90px;
+    height: 90px;
+}
+.fila1, .fila2, .fila3, .op{
+    padding-bottom: 5px;
+}
+#igual{ 
+    position:absolute;
+    margin-left: 5px;
+    height: 184px;
+}
+#footer{
+position:fixed;
+bottom:5%;
+right: 45%;
+text-decoration: none ;
+color: white;
+border: none;
+}
+h1{
+color:white;
+position:fixed;
+top:5%;
+}
